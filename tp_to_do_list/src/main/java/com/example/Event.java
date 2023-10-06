@@ -7,10 +7,14 @@ public class Event {
     private static int count;
 
     public Event(String description) {
-        ++count;
+        count++;
         this.id = count;
         this.description = description;
         this.status = "En cours";
+    }
+
+    public void edit(String description) {
+        this.description = description;
     }
 
     public void setDone() {

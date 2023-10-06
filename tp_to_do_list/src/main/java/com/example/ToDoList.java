@@ -9,7 +9,7 @@ public class ToDoList {
     }
 
     public Event getEvent(int index) {
-        return eventList.get(index);
+        return eventList.get(index - 1);
     }
 
     public void addEvent(Event event) {
@@ -23,7 +23,7 @@ public class ToDoList {
     }
 
     public void deleteEvent(int index) {
-        eventList.remove(index);
+        eventList.remove(index - 1);
     }
 
     public void exit() {
